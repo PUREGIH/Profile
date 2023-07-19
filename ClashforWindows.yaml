@@ -60,8 +60,8 @@ dns:
 # 策略组引用
 pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }
 p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
-auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe] }
-use:  &a2 {type: select,   use: [Subscribe] }
+auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+use:  &a2 {type: select,   use: [Subscribe], proxies: [🚁 自建节点]}
 c:    &a6 {type: http,     behavior: classical, interval: 86400}
 d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
@@ -69,19 +69,24 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *a1
-    url: https://t.me/ddgksf2021.yaml
+    url: https://api.nexconvert.com/sub?target=clash&url=https://nachoneko.cn/api/v1/client/subscribe?token=10a2a283e8305d97d7097111c6027fe3&emoji=true&list=true&new_name=true&udp=false
     # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
     # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
     path: ./proxy_providers/tmp.yaml
     
-proxies: null
+proxies:
+  - {name: Tokyo | 01, server: www.softrib.xyz, port: 4431, type: trojan, password: yctL8xleDD, skip-cert-verify: true, udp: true}
+  - {name: HK 03, server: azure.softrib.xyz, port: 443, type: vmess, uuid: 8498077f-eab1-4e9f-e5e3-e321e3fea1e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: azure.softrib.xyz}}, udp: true}
+  - {name: Tokyo | 02, server: xui.kejiovo.xyz, port: 443, type: vmess, uuid: 00b8dbad-cc9f-49c7-c0ac-b74a8eb71b91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: xui.kejiovo.xyz}}, udp: true}
+
 proxy-groups:
 #分流分组
   - {name: 🚀 手动切换, <<: *a2}
+  - {name: 🚁 自建节点, type: select, proxies: [Tokyo | 01, Tokyo | 02, HK 03]}
   - {name: 🌏 全球加速, <<: *a3}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
-  - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点]}
+  - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点, Tokyo | 01]}
   - {name: 🎬 国际媒体, <<: *a3}
   - {name: 🌌 谷歌服务, <<: *a3}
   - {name: 📟 电报消息, <<: *a3}
