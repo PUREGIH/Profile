@@ -77,12 +77,10 @@ proxy-providers:
 proxies:
   - {name: Tokyo | 01, server: www.softrib.xyz, port: 4431, type: trojan, password: yctL8xleDD, skip-cert-verify: true, udp: true}
   - {name: HK 03, server: azure.softrib.xyz, port: 443, type: vmess, uuid: 8498077f-eab1-4e9f-e5e3-e321e3fea1e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: azure.softrib.xyz}}, udp: true}
-  - {name: Tokyo | 02, server: xui.kejiovo.xyz, port: 443, type: vmess, uuid: 00b8dbad-cc9f-49c7-c0ac-b74a8eb71b91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: xui.kejiovo.xyz}}, udp: true}
-
 proxy-groups:
 #分流分组
   - {name: 🚀 手动切换, <<: *a2}
-  - {name: 🚁 自建节点, type: select, proxies: [Tokyo | 01, Tokyo | 02, HK 03]}
+  - {name: 🚁 自建节点, type: select, proxies: [Tokyo | 01, HK 03]}
   - {name: 🌏 全球加速, <<: *a3}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
