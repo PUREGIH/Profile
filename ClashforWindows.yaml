@@ -76,7 +76,7 @@ proxy-providers:
     
 proxies:
   - {name: Tokyo | 01, server: www.softrib.xyz, port: 4431, type: trojan, password: yctL8xleDD, skip-cert-verify: true, udp: true}
-  - {name: HK 03, server: azure.softrib.xyz, port: 443, type: vmess, uuid: 8498077f-eab1-4e9f-e5e3-e321e3fea1e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: azure.softrib.xyz}}, udp: true}
+  - {name: HK 03, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: 8498077f-eab1-4e9f-e5e3-e321e3fea1e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: www.ma.softrib.xyz}}, udp: true}
 proxy-groups:
 #分流分组
   - {name: 🚀 手动切换, <<: *a2}
