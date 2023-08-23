@@ -75,17 +75,18 @@ proxy-providers:
     path: ./proxy_providers/tmp.yaml
     
 proxies:
-  - {name: Tokyo, server: www.softrib.xyz, port: 443, type: vmess, uuid: 282d1497-02c0-45a3-ba5b-fc13f19f9caf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath1, headers: {Host: www.softrib.xyz}}, udp: true}
+  - {name: 🇯🇵 02|bTqU.love@xray.com, server: www.softrib.xyz, port: 443, type: vmess, uuid: c6111952-c5cc-4581-80df-f31757283802, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path1, headers: {Host: www.softrib.xyz}}}
+  - {name: 🇯🇵 02|Eitw.love@xray.com, server: www.softrib.xyz, port: 443, type: vmess, uuid: 48d9c3f9-19ae-40c8-8d1c-c4d09bd2c697, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path1, headers: {Host: www.softrib.xyz}}}
   - {name: HK 03, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: 8498077f-eab1-4e9f-e5e3-e321e3fea1e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath3, headers: {Host: www.ma.softrib.xyz}}, udp: true}
 
 proxy-groups:
 #分流分组
   - {name: 🚀 手动切换, <<: *a2}
-  - {name: 🚁 自建节点, type: select, proxies: [Tokyo, HK 03]}
+  - {name: 🚁 自建节点, type: select, proxies: [🇯🇵 02|bTqU.love@xray.com, 🇯🇵 02|Eitw.love@xray.com, HK 03]}
   - {name: 🌏 全球加速, <<: *a3}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
-  - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点, Tokyo]}
+  - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点, 🇯🇵 02|bTqU.love@xray.com]}
   - {name: 🎬 国际媒体, <<: *a3}
   - {name: 🌌 谷歌服务, <<: *a3}
   - {name: 📟 电报消息, <<: *a3}
