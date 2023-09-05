@@ -9121,6 +9121,13 @@ rules:
  - IP-CIDR,34.210.42.111/32,🎥 NETFLIX,no-resolve
  - IP-CIDR,52.89.124.203/32,🎥 NETFLIX,no-resolve
  - IP-CIDR,54.148.37.5/32,🎥 NETFLIX,no-resolve
+ - DOMAIN-SUFFIX,dlandroid.rcv.sandai.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hub5idx.v6.shub.sandai.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hub5pn.wap.sandai.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hub5pnc.sandai.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hubciddata.sandai.net,🌍 国外媒体
+ - DOMAIN-KEYWORD,mypikpak,🌍 国外媒体
  - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
