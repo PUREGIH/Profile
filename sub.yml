@@ -7,6 +7,49 @@ external-controller: :9090
 proxies:
   - {name: JP 02|bTqU.love@xray.com, server: www.softrib.xyz, port: 443, type: vmess, uuid: c6111952-c5cc-4581-80df-f31757283802, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: www.softrib.xyz}}, udp: true}
   - {name: HK 02, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: e1a29bea-6a68-4272-91cf-8160bf73c6a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath2, headers: {Host: www.ma.softrib.xyz}}, udp: true}
+  - {name: 禁止回国, server: 127.0.0.1, port: 53, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: -----以下为国内区-----, server: 127.0.0.1, port: 53, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 沈阳联通 01 | ws, server: 60.18.196.145, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 沈阳联通 02 | tcp, server: 60.18.196.164, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 沈阳联通 03 | ipv6, server: 2408:8732:c001:2:0:1:6666:6666, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 济南联通 01 | ws, server: 60.215.152.143, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 济南联通 02 | tcp, server: 60.215.152.144, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 镇江电信 01 | ws, server: 222.186.48.62, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 镇江电信 02 | tcp, server: 222.186.48.52, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: -----以下为国际区-----, server: 127.0.0.1, port: 53, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 香港 01 | ws, server: 120.195.181.66, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 香港 02 | ws, server: 120.195.181.23, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 香港 03 | tcp, server: 120.195.181.57, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 04 | tcp, server: 120.195.181.25, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 05 | ipv6, server: 2407:cdc0:b027::1097, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 台湾 01 | ws, server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 台湾 02 | ws, server: 23341317-8bba-3a70-9085-b1e032767e01.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 台湾 03 | tcp, server: 72879ec6-6e4f-672e-0882-61232310cf6b.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾 04 | tcp, server: 010b8638-97f3-83fb-7896-6c878aadc676.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01 | ws, server: 120.195.181.42, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 新加坡 02 | ws, server: 120.195.181.43, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 新加坡 03 | tcp, server: 120.195.181.13, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 04 | tcp, server: 120.195.181.69, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | ws, server: 120.195.181.7, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本 02 | ws, server: 120.195.181.10, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本 03 | tcp, server: 120.195.181.19, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 | tcp, server: 120.195.181.33, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国 01 | ws, server: 120.195.181.34, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 韩国 02 | tcp, server: 120.195.181.35, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 01 | ws, server: 222.186.48.61, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 美国 02 | ws, server: 125.124.254.5, port: 20010, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 美国 03 | tcp, server: 125.124.254.5, port: 20003, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 01 | ws, server: 125.124.254.5, port: 20004, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 芬兰 01 | ws, server: 125.124.254.5, port: 20012, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 土耳其 01 | ws, server: 125.124.254.5, port: 20008, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 阿根廷 01 | ws, server: 125.124.254.5, port: 20001, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 伊拉克 01 | ws, server: 125.124.254.5, port: 20011, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 叙利亚 01 | ws, server: 125.124.254.5, port: 20009, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 缅甸 01 | ws, server: 125.124.254.5, port: 20000, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 泰国 01 | ws, server: 125.124.254.5, port: 20002, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 阿尔及利亚01 | ws, server: 222.186.48.61, port: 20310, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: -----以下为低倍率区-----, server: 127.0.0.1, port: 53, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 香港 01 | ws | 低倍率, server: 87e217b2-484e-f28b-5881-8e331740ce3a.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -15,6 +58,49 @@ proxy-groups:
       - 🎯 全球直连
       - JP 02|bTqU.love@xray.com
       - HK 02
+      - 禁止回国
+      - -----以下为国内区-----
+      - 沈阳联通 01 | ws
+      - 沈阳联通 02 | tcp
+      - 沈阳联通 03 | ipv6
+      - 济南联通 01 | ws
+      - 济南联通 02 | tcp
+      - 镇江电信 01 | ws
+      - 镇江电信 02 | tcp
+      - -----以下为国际区-----
+      - 香港 01 | ws
+      - 香港 02 | ws
+      - 香港 03 | tcp
+      - 香港 04 | tcp
+      - 香港 05 | ipv6
+      - 台湾 01 | ws
+      - 台湾 02 | ws
+      - 台湾 03 | tcp
+      - 台湾 04 | tcp
+      - 新加坡 01 | ws
+      - 新加坡 02 | ws
+      - 新加坡 03 | tcp
+      - 新加坡 04 | tcp
+      - 日本 01 | ws
+      - 日本 02 | ws
+      - 日本 03 | tcp
+      - 日本 04 | tcp
+      - 韩国 01 | ws
+      - 韩国 02 | tcp
+      - 美国 01 | ws
+      - 美国 02 | ws
+      - 美国 03 | tcp
+      - 德国 01 | ws
+      - 芬兰 01 | ws
+      - 土耳其 01 | ws
+      - 阿根廷 01 | ws
+      - 伊拉克 01 | ws
+      - 叙利亚 01 | ws
+      - 缅甸 01 | ws
+      - 泰国 01 | ws
+      - 阿尔及利亚01 | ws
+      - -----以下为低倍率区-----
+      - 香港 01 | ws | 低倍率
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -22,6 +108,49 @@ proxy-groups:
     proxies:
       - JP 02|bTqU.love@xray.com
       - HK 02
+      - 禁止回国
+      - -----以下为国内区-----
+      - 沈阳联通 01 | ws
+      - 沈阳联通 02 | tcp
+      - 沈阳联通 03 | ipv6
+      - 济南联通 01 | ws
+      - 济南联通 02 | tcp
+      - 镇江电信 01 | ws
+      - 镇江电信 02 | tcp
+      - -----以下为国际区-----
+      - 香港 01 | ws
+      - 香港 02 | ws
+      - 香港 03 | tcp
+      - 香港 04 | tcp
+      - 香港 05 | ipv6
+      - 台湾 01 | ws
+      - 台湾 02 | ws
+      - 台湾 03 | tcp
+      - 台湾 04 | tcp
+      - 新加坡 01 | ws
+      - 新加坡 02 | ws
+      - 新加坡 03 | tcp
+      - 新加坡 04 | tcp
+      - 日本 01 | ws
+      - 日本 02 | ws
+      - 日本 03 | tcp
+      - 日本 04 | tcp
+      - 韩国 01 | ws
+      - 韩国 02 | tcp
+      - 美国 01 | ws
+      - 美国 02 | ws
+      - 美国 03 | tcp
+      - 德国 01 | ws
+      - 芬兰 01 | ws
+      - 土耳其 01 | ws
+      - 阿根廷 01 | ws
+      - 伊拉克 01 | ws
+      - 叙利亚 01 | ws
+      - 缅甸 01 | ws
+      - 泰国 01 | ws
+      - 阿尔及利亚01 | ws
+      - -----以下为低倍率区-----
+      - 香港 01 | ws | 低倍率
   - name: 🎥 NETFLIX
     type: select
     proxies:
