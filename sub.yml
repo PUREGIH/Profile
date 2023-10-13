@@ -9,17 +9,6 @@ proxies:
   - {name: HK 02, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: e1a29bea-6a68-4272-91cf-8160bf73c6a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath2, headers: {Host: www.ma.softrib.xyz}}, udp: true}
   - {name: 🇨🇳 台湾 01 | ws, server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
   - {name: 🇨🇳 台湾 02 | ws, server: 23341317-8bba-3a70-9085-b1e032767e01.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇨🇳 台湾 03 | tcp, server: 72879ec6-6e4f-672e-0882-61232310cf6b.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾 04 | tcp, server: 010b8638-97f3-83fb-7896-6c878aadc676.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false}
-  - {name: 德国 01 | ws, server: 125.124.254.5, port: 20004, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 芬兰 01 | ws, server: 125.124.254.5, port: 20012, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 土耳其 01 | ws, server: 125.124.254.5, port: 20008, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 阿根廷 01 | ws, server: 125.124.254.5, port: 20001, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 伊拉克 01 | ws, server: 125.124.254.5, port: 20011, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 叙利亚 01 | ws, server: 125.124.254.5, port: 20009, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 缅甸 01 | ws, server: 125.124.254.5, port: 20000, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 泰国 01 | ws, server: 125.124.254.5, port: 20002, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 香港 01 | ws | 低倍率, server: 87e217b2-484e-f28b-5881-8e331740ce3a.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -30,17 +19,6 @@ proxy-groups:
       - HK 02
       - 🇨🇳 台湾 01 | ws
       - 🇨🇳 台湾 02 | ws
-      - 🇨🇳 台湾 03 | tcp
-      - 🇨🇳 台湾 04 | tcp
-      - 德国 01 | ws
-      - 芬兰 01 | ws
-      - 土耳其 01 | ws
-      - 阿根廷 01 | ws
-      - 伊拉克 01 | ws
-      - 叙利亚 01 | ws
-      - 缅甸 01 | ws
-      - 泰国 01 | ws
-      - 香港 01 | ws | 低倍率
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -50,17 +28,6 @@ proxy-groups:
       - HK 02
       - 🇨🇳 台湾 01 | ws
       - 🇨🇳 台湾 02 | ws
-      - 🇨🇳 台湾 03 | tcp
-      - 🇨🇳 台湾 04 | tcp
-      - 德国 01 | ws
-      - 芬兰 01 | ws
-      - 土耳其 01 | ws
-      - 阿根廷 01 | ws
-      - 伊拉克 01 | ws
-      - 叙利亚 01 | ws
-      - 缅甸 01 | ws
-      - 泰国 01 | ws
-      - 香港 01 | ws | 低倍率
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -68,7 +35,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - JP 02|bTqU.love@xray.com
-      - HK 02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,7 +54,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - JP 02|bTqU.love@xray.com
-      - HK 02
   - name: 🤖 OpenAi
     type: select
     proxies:
@@ -104,14 +69,12 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - JP 02|bTqU.love@xray.com
-      - HK 02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - JP 02|bTqU.love@xray.com
-      - HK 02
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -119,7 +82,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - JP 02|bTqU.love@xray.com
-      - HK 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -136,7 +98,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - JP 02|bTqU.love@xray.com
-      - HK 02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
