@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: JP 02|bTqU.love@xray.com, server: www.softrib.xyz, port: 443, type: vmess, uuid: c6111952-c5cc-4581-80df-f31757283802, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: www.softrib.xyz}}, udp: true}
-  - {name: JP 02|cloudfront, server: 13.35.70.114, port: 80, type: vmess, uuid: 6234c4ef-8862-4c14-f3c8-371e54c6e9ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: d2nplok0jmt7w1.cloudfront.net}}, udp: true}
+  - {name: JP 02|cloudfront, server: 13.35.70.114, port: 443, type: vmess, uuid: 6234c4ef-8862-4c14-f3c8-371e54c6e9ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: d2nplok0jmt7w1.cloudfront.net}}, udp: true}
   - {name: HK 02, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: e1a29bea-6a68-4272-91cf-8160bf73c6a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath2, headers: {Host: www.ma.softrib.xyz}}, udp: true}
   - {name: 🇨🇳 台湾 01 | ws, server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
   - {name: 🇨🇳 台湾 02 | ws, server: 23341317-8bba-3a70-9085-b1e032767e01.nachoneko.ltd, port: 80, type: vmess, uuid: d35ec55e-0c3e-415c-9a99-a7de9c8f9d90, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
