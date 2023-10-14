@@ -17,6 +17,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - JP 02|bTqU.love@xray.com
+      - JP 02|cloudfront
       - HK 02
       - 🇨🇳 台湾 01 | ws
       - 🇨🇳 台湾 02 | ws
@@ -58,7 +59,7 @@ proxy-groups:
   - name: 🤖 OpenAi
     type: select
     proxies:
-      - JP 02|bTqU.love@xray.com
+      - JP 02|cloudfront
   - name: 🌏 国内媒体
     type: select
     proxies:
