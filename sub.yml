@@ -7,6 +7,7 @@ external-controller: :9090
 proxies:
   - {name: JP 02|bTqU.love@xray.com, server: www.softrib.xyz, port: 443, type: vmess, uuid: c6111952-c5cc-4581-80df-f31757283802, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: www.softrib.xyz}}, udp: true}
   - {name: JP 02|cloudfront, server: 65.9.40.174, port: 443, type: vmess, uuid: 6234c4ef-8862-4c14-f3c8-371e54c6e9ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: d2nplok0jmt7w1.cloudfront.net}}, udp: true}
+  - {name: HK 02, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: e1a29bea-6a68-4272-91cf-8160bf73c6a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath2, headers: {Host: www.ma.softrib.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -16,24 +17,20 @@ proxy-groups:
       - JP 02|bTqU.love@xray.com
       - JP 02|cloudfront
       - HK 02
-      - 🇨🇳 台湾 01 | ws
-      - 🇨🇳 台湾 02 | ws
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - JP 02|bTqU.love@xray.com
+      - JP 02|cloudfront
       - HK 02
-      - 🇨🇳 台湾 01 | ws
-      - 🇨🇳 台湾 02 | ws
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP 02|bTqU.love@xray.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,7 +49,6 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP 02|bTqU.love@xray.com
   - name: 🤖 OpenAi
     type: select
     proxies:
@@ -67,20 +63,17 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP 02|bTqU.love@xray.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP 02|bTqU.love@xray.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP 02|bTqU.love@xray.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -96,7 +89,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP 02|bTqU.love@xray.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
