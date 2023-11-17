@@ -10346,5 +10346,18 @@ rules:
  - DOMAIN-SUFFIX,sentry.io,🤖 OpenAi
  - DOMAIN-SUFFIX,stripe.com,🤖 OpenAi
  - DOMAIN-KEYWORD,openai,🤖 OpenAi
+ - DOMAIN-SUFFIX,google.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,googleapis.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,hcaptcha.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,recaptcha.net,🤖 OpenAi
+ - DOMAIN-SUFFIX,gstatic.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,gvt2.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,gvt1.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,gvt3.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,msftconnecttest.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,live.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,sfx.ms,🤖 OpenAi
+ - DOMAIN-SUFFIX,microsoft.com,🤖 OpenAi
+ - DOMAIN-SUFFIX,oaistatic.com,🤖 OpenAi
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
