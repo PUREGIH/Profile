@@ -52,7 +52,7 @@ proxy-groups:
   - name: 🤖 OpenAi
     type: select
     proxies:
-      - JP 02|cloudfront
+      - 🔰 节点选择
   - name: 🌏 国内媒体
     type: select
     proxies:
