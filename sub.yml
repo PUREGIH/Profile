@@ -53,6 +53,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
+      - JP 02|bTqU.love@xray.com
   - name: 🌏 国内媒体
     type: select
     proxies:
