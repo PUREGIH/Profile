@@ -10360,6 +10360,6 @@ rules:
  - DOMAIN-SUFFIX,sfx.ms,🤖 OpenAi
  - DOMAIN-SUFFIX,microsoft.com,🤖 OpenAi
  - DOMAIN-SUFFIX,oaistatic.com,🤖 OpenAi
- - DOMAIN,www.perplexity.ai,🤖 OpenAi
+ - DOMAIN-SUFFIX,perplexity.ai,🤖 OpenAi
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
