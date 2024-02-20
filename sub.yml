@@ -5,9 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP 02|bTqU.love@xray.com, server: www.softrib.xyz, port: 443, type: vmess, uuid: c6111952-c5cc-4581-80df-f31757283802, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: www.softrib.xyz}}, udp: true}
   - {name: JP 02|cloudfront, server: 65.9.40.174, port: 443, type: vmess, uuid: 6234c4ef-8862-4c14-f3c8-371e54c6e9ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path1, headers: {Host: d2nplok0jmt7w1.cloudfront.net}}, udp: true}
-  - {name: HK 02, server: www.ma.softrib.xyz, port: 443, type: vmess, uuid: e1a29bea-6a68-4272-91cf-8160bf73c6a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /raypath2, headers: {Host: www.ma.softrib.xyz}}, udp: true}
   - { name: '台湾 | 80 | TCP |', type: vmess, server: twg.xn--vhq70hxyat50h6wk.qingze-quick.buzz, port: 80, uuid: cc940692-b416-4817-8b25-0b9426d799e8, alterId: 0, cipher: auto, udp: true, network: http, http-opts: { method: GET, path: [/, /TS/recharge/tzUrl.html, /favicon.ico, /i/mobile/greentip.html, /payprod-format/h5/dup_submit], headers: { Host: [data.video.qiyi.com] } } }
   - { name: 'Az香港3 | 443 | TCP |', type: vmess, server: hk4.qingze-quick.buzz, port: 443, uuid: cc940692-b416-4817-8b25-0b9426d799e8, alterId: 0, cipher: auto, udp: true, tls: true, servername: hk4.qingze-quick.buzz, network: http, http-opts: { method: GET, path: [/, /TS/recharge/tzUrl.html, /favicon.ico, /i/mobile/greentip.html, /payprod-format/h5/dup_submit], headers: { Host: [data.video.qiyi.com] } } }
   - { name: '日本4 | 443 | TCP |', type: vmess, server: jp6.qingze-quick.buzz, port: 443, uuid: cc940692-b416-4817-8b25-0b9426d799e8, alterId: 0, cipher: auto, udp: true, tls: true, servername: jp6.qingze-quick.buzz, network: http, http-opts: { method: GET, path: [/, /TS/recharge/tzUrl.html, /favicon.ico, /i/mobile/greentip.html, /payprod-format/h5/dup_submit], headers: { Host: [data.video.qiyi.com] } } }
@@ -28,14 +26,12 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP 02|bTqU.love@xray.com
       - JP 02|cloudfront
-      - HK 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    proxies: ['JP 02|bTqU.love@xray.com', 'JP 02|cloudfront', 'HK 02', '台湾 | 80 | TCP |', 'Az香港3 | 443 | TCP |', '日本4 | 443 | TCP |', 'Az新加坡| 443 | TCP |', 'Az日本5 | 443 | TCP |', '日本6 | 443 | TCP |', '日本1 | 443 | Reality |', 'Az日本3 | 443 | Reality |', 'Opc日本 | 80 | WS |', '美国2  | Kcp |', 'Opc日本 | 30450 | WS |', 'Opc韩国 | 27900 | Reality |', 'Opc美国1  | 中转 |', 'Opc美国2 | 中转 |']
+    proxies: ['JP 02|cloudfront', '台湾 | 80 | TCP |', 'Az香港3 | 443 | TCP |', '日本4 | 443 | TCP |', 'Az新加坡| 443 | TCP |', 'Az日本5 | 443 | TCP |', '日本6 | 443 | TCP |', '日本1 | 443 | Reality |', 'Az日本3 | 443 | Reality |', 'Opc日本 | 80 | WS |', '美国2  | Kcp |', 'Opc日本 | 30450 | WS |', 'Opc韩国 | 27900 | Reality |', 'Opc美国1  | 中转 |', 'Opc美国2 | 中转 |']
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -64,7 +60,6 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - JP 02|bTqU.love@xray.com
   - name: 🌏 国内媒体
     type: select
     proxies:
