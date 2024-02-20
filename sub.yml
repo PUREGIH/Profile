@@ -35,10 +35,7 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    proxies:
-      - JP 02|bTqU.love@xray.com
-      - JP 02|cloudfront
-      - HK 02
+    proxies: ['JP 02|bTqU.love@xray.com', 'JP 02|cloudfront', 'HK 02', '台湾 | 80 | TCP |', 'Az香港3 | 443 | TCP |', '日本4 | 443 | TCP |', 'Az新加坡| 443 | TCP |', 'Az日本5 | 443 | TCP |', '日本6 | 443 | TCP |', '日本1 | 443 | Reality |', 'Az日本3 | 443 | Reality |', 'Opc日本 | 80 | WS |', '美国2  | Kcp |', 'Opc日本 | 30450 | WS |', 'Opc韩国 | 27900 | Reality |', 'Opc美国1  | 中转 |', 'Opc美国2 | 中转 |']
   - name: 🎥 NETFLIX
     type: select
     proxies:
