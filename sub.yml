@@ -10340,7 +10340,6 @@ rules:
  - DOMAIN-KEYWORD,yunpan,🎯 全球直连
  - DOMAIN-KEYWORD,Thunder,🎯 全球直连
  - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
- - DOMAIN-SUFFIX,softrib.xyz,🎯 全球直连
  - DOMAIN-SUFFIX,ai.com,🤖 OpenAi
  - DOMAIN-SUFFIX,auth0.com,🤖 OpenAi
  - DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 OpenAi
